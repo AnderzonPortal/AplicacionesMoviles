@@ -1,9 +1,0 @@
-<resources>
-<string name="app_name">Registro UNS</string>
-<string-array name="opciones_ordenamiento">
-    <item>Por Código (A-Z)</item>
-    <item>Por Código (Z-A)</item>
-    <item>Por Apellidos (A-Z)</item>
-    <item>Por Apellidos (Z-A)</item>
-</string-array>
-</resources>
