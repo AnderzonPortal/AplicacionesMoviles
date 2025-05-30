@@ -1,0 +1,7 @@
+<resources>
+    <color name="verde_oscuro">#00A74F</color>
+    <color name="verde_claro">#D8F4E3</color>
+    <color name="verde_ni_claro_ni_oscuro">#59D28F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verde_claro">
+
+    <View
+        android:id="@+id/fondoVerde"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/bg_verde" />
+
+    <ImageView
+        android:id="@+id/fotoDoctor"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:padding="6dp"
+        android:src="@drawable/doctor"
+        android:contentDescription="@string/icono"
+        android:elevation="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotoDoctor"
+        android:layout_marginTop="110dp"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/nombreDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Nombre"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/verde_oscuro" />
+
+            <TextView
+                android:id="@+id/especialidadDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especialidad: Cardiología"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/fraseDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“Tu salud es mi prioridad.”"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/botonAgendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agendar Cita"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/verde_oscuro"
+                android:textColor="@android:color/white"
+                android:elevation="6dp"
+                android:padding="14dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
