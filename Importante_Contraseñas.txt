@@ -1,0 +1,12 @@
+=====================
+S1_AM_LoginRegister
+====================
+usuario = admin
+contraseña: 1234
+
+=====================
+S2_RegisterAlumnosUNS
+====================
+usuario = admin
+contraseña: 1234
+
