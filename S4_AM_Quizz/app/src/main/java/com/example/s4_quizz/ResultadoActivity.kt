@@ -32,13 +32,11 @@ class ResultadoActivity : AppCompatActivity() {
         imgResultado = findViewById(R.id.imgResultado)
         layoutRoot = findViewById(R.id.layoutRoot)
 
-        // Datos recibidos del intent
         val esCorrecto = intent.getBooleanExtra("esCorrecto", false)
         val puntosActuales = intent.getIntExtra("puntos", 0)
         val preguntaIndice = intent.getIntExtra("indice", 0)
         val usuario = intent.getStringExtra("usuario") ?: "Invitado"
 
-        // Mostrar texto central e imagen de resultado
         txtResultado.text = if (esCorrecto) "¡Buen trabajo!" else "¡Uy casi!"
         txtPuntos.text = if (esCorrecto) "+10 puntos" else "-10 puntos"
         txtPuntos.setTextColor(
@@ -49,16 +47,14 @@ class ResultadoActivity : AppCompatActivity() {
         )
         imgResultado.setImageResource(if (esCorrecto) R.drawable.ic_check else R.drawable.ic_x)
 
-        // Mostrar datos del usuario y puntos en la barra inferior
         txtNombreUsuario.text = usuario
         txtPuntosEnTiempoReal.text = "Puntos: $puntosActuales"
 
-        // Avanzar a la siguiente pregunta al tocar cualquier parte del layout
         layoutRoot.setOnClickListener {
             val intent = Intent(this, BienvenidoActivity::class.java)
             intent.putExtra("puntos", puntosActuales)
             intent.putExtra("indice", preguntaIndice)
-            intent.putExtra("usuario", usuario)  // ✅ El nombre del usuario se pasa correctamente
+            intent.putExtra("usuario", usuario)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
             finish()

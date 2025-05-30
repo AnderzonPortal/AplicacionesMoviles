@@ -29,7 +29,7 @@ class BienvenidoActivity : AppCompatActivity() {
 
     private val preguntas = PreguntasProvider.listaPreguntas
 
-    // VARIABLE PARA GUARDAR EL USUARIO RECIBIDO
+
     private var usuario: String = "Invitado"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,11 +48,9 @@ class BienvenidoActivity : AppCompatActivity() {
         cardRespuesta3 = findViewById(R.id.cardRespuesta3)
         cardRespuesta4 = findViewById(R.id.cardRespuesta4)
 
-        // Recuperar datos si vienen de ResultadoActivity o de inicio
         puntos = intent.getIntExtra("puntos", 0)
         indicePregunta = intent.getIntExtra("indice", 0)
 
-        // RECUPERAR EL USUARIO DEL INTENT
         usuario = intent.getStringExtra("usuario") ?: "Invitado"
 
         configurarEventos()

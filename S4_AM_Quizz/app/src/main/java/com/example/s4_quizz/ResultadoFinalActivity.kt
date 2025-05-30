@@ -18,11 +18,9 @@ class ResultadoFinalActivity : AppCompatActivity() {
         txtPuntosFinales = findViewById(R.id.txtPuntosFinales)
         btnReiniciar = findViewById(R.id.btnReiniciar)
 
-        // Obtener puntos totales
         val puntosFinales = intent.getIntExtra("puntosFinales", 0)
         txtPuntosFinales.text = "Puntos totales: $puntosFinales"
 
-        // Redirigir a CategoriasActivity al presionar el botón
         btnReiniciar.setOnClickListener {
             val intent = Intent(this, CategoriasActivity::class.java)
             startActivity(intent)

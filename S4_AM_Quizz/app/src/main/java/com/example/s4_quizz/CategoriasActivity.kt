@@ -41,14 +41,14 @@ class CategoriasActivity : AppCompatActivity() {
         val cardSeguridad = findViewById<CardView>(R.id.card_seguridad)
         val cardTesis = findViewById<CardView>(R.id.card_tesis)
 
-        // Click en "APLICACIONES MOVILES" abre BienvenidoActivity
+
         cardAplicaciones.setOnClickListener {
             val intent = Intent(this, BienvenidoActivity::class.java)
-            intent.putExtra("usuario", usuario) // ✅ AGREGA ESTA LÍNEA
+            intent.putExtra("usuario", usuario) //
             startActivity(intent)
         }
 
-        // Click en las demás tarjetas abre ProximamenteActivity
+
         val tarjetasProximamente = listOf(
             cardAlgoritmos,
             cardGestion,
