@@ -1,0 +1,3 @@
+<declare-styleable name="CustomAttributes">
+    <attr name="cardBackgroundDark" format="color"/>
+</declare-styleable>

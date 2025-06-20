@@ -1,0 +1,14 @@
+<!-- colors.xml (modo oscuro) -->
+<resources>
+
+    <color name="background_light">#616161</color> <!-- Color blanco -->
+    <color name="background_dark">#808080</color> <!-- Color gris plomo -->
+
+
+    <color name="card_background_light">#212121</color> <!-- Gris oscuro para modo oscuro -->
+    <color name="card_background_dark">#616161</color> <!-- Gris más oscuro para modo oscuro -->
+
+    <!-- Colores para el modo oscuro -->
+    <color name="spinner_background_dark">#424242</color>  <!-- Fondo oscuro -->
+    <color name="spinner_text_color_dark">#000000</color>  <!-- Texto claro -->
+</resources>

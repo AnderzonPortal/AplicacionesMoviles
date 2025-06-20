@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.S8_FormularioSanPedrito" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/buttonColor</item>
+        <item name="colorSecondary">@color/secondaryTextColor</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+
+
+    </style>
+</resources>

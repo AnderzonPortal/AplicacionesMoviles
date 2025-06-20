@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Modo claro -->
+    <item android:drawable="@color/spinner_background_dark" />
+    <!-- Modo oscuro -->
+    <item android:drawable="@color/spinner_background_light" android:state_enabled="true" />
+</selector>
