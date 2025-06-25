@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Gradiente principal del perfil -->
+    <gradient
+        android:angle="135"
+        android:startColor="#667eea"
+        android:centerColor="#764ba2"
+        android:endColor="#f093fb"
+        android:type="linear" />
+
+    <!-- Esquinas redondeadas en la parte inferior -->
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp" />
+
+</shape>
+
+    <!-- Alternativa con colores más modernos -->
+    <!--
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <gradient
+            android:angle="45"
+            android:startColor="#4158D0"
+            android:centerColor="#C850C0"
+            android:endColor="#FFCC70"
+            android:type="linear" />
+
+    </shape>
+    -->
+
+    <!-- Otra alternativa con tema azul -->
+    <!--
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <gradient
+            android:angle="135"
+            android:startColor="#1e3c72"
+            android:centerColor="#2a5298"
+            android:endColor="#74b9ff"
+            android:type="linear" />
+
+    </shape>
+    -->

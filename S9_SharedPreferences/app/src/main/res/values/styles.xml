@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema Claro -->
+    <style name="Theme.S9_SharedPreferences.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">#A22B2B</item>
+    </style>
+
+    <!-- Tema Oscuro -->
+    <style name="Theme.S9_SharedPreferences.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">#3E5AAD</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="CustomTextInputEditTextStyle" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+</resources>
